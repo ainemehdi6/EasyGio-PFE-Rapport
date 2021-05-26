@@ -4,6 +4,9 @@
 \usepackage[francais]{babel}
 \usepackage{graphicx} 
 \usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcommand{\link}[1]{{\color{blue}\href{#1}{#1}}}
 \usepackage{array,multirow,makecell}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
@@ -43,6 +46,11 @@ Autour du langage de dessin vectoriel asymptote} \\[0.4cm]
 {\large 12/04/2021}
 \end{center}
 \end{titlepage}
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{images/rabbi zidni ilma.PNG}
+\end{figure}
+\newpage
 \chapter*{Dédicace}
 \begin{center}
 \textbf{À ALLAH avant tout\\
@@ -300,11 +308,12 @@ Cette section met l’accent sur les logiciels utilisés durant ce travail. Puis
 \subsection{Environnements de travail}
 Les principaux logiciels utilisé durant la conception d'EasyGio sont:
 \begin{itemize}
-    \item Visual studio code : Afin d’avoir une bonne aide au développement ainsi qu’une bonne intégration des dfférents outils python Visual Studio Code fut utilisé tout au long du développement, c'est un éditeur de code extensible ses fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré et des extensions qui ajoutent des  fonctionnalités supplémentaires.
-    \item Miktex : C'est une distribution TeX libre pour Windows visant à fournir un environnement TeX/LaTeX complet et prêt à utiliser, pour exécuter les fichier asymptote et rédiger le rapport.
-    \item Microsoft Office : World 2019 pour la rédaction du cahier des charges.
-    \item Gantter project : Pour la rédaction du diagramme gant.
-    \item Adobe : utilisé pour le traitement des images utilisées tout le long du projet que ce soit dans la conception du logo dans le rapport élaboration du cahier de charge ou le développement de l’application.
+    \item \textbf{Visual studio code :} Afin d’avoir une bonne aide au développement ainsi qu’une bonne intégration des dfférents outils python Visual Studio Code fut utilisé tout au long du développement, c'est un éditeur de code extensible ses fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré et des extensions qui ajoutent des  fonctionnalités supplémentaires.
+    \item  \textbf{Miktex :} C'est une distribution TeX libre pour Windows visant à fournir un environnement TeX/LaTeX complet et prêt à utiliser, pour exécuter les fichier asymptote et rédiger le rapport.
+    \item  \textbf{Microsoft Office :} World 2019 pour la rédaction du cahier des charges.
+    \item  \textbf{Gantter project :} Pour la rédaction du diagramme gant.
+    \item  \textbf{Adobe :} utilisé pour le traitement des images utilisées tout le long du projet que ce soit dans la conception du logo dans le rapport élaboration du cahier de charge ou le développement de l’application.
+    \item  \textbf{Draw.io:} Pour la rédaction des différents diagrammeS et organigrammes pour le rapport.
 \end{itemize}
 \subsection{Langage de programmation et technologies utilisés}
 Durant notre travail, on a utiliser plusieurs outils et technologies :
@@ -442,4 +451,29 @@ Si non il va afficher une notification que le fichier a bien été télécharger
     \caption{EasyGio Info et Erreur fenêtres}
     \label{fig:EasyGio Info et Erreur fenêtres}
 \end{figure}\\
+\chapter*{Webographie}
+\begin{enumerate}
+    \item Google. Le forum officiel d'asymptote pour les documentations\\
+    URL: \link{https://asymptote.sourceforge.io}
+    \item Google. Un site pour les documents PDF pour comprendre l'asymptote et la bibliotheque Tkinter de python\\
+    URL: \link{https://fr.scribd.com}
+    \item Wikipedia. Asymptote language\\
+    URL: \link{https://en.wikipedia.org/wiki/Asymptote_(vector_graphics_language)}
+    \item Google. Démarrage rapide du langage asymptote\\
+    URL: \link{https://www.cgmaths.fr/cgFiles/Dem_Rapide.pdf}
+    \item Asymptote. A modern successor to the METAPOST vector graphics language\\
+    URL: \link{https://www.researchgate.net/publication/242776997_Asymptote_The_Vector_Graphics_Language}
+    \item Asymptote. (Vector Graphics Language)\\
+    URL: \link{https://artofproblemsolving.com/}
+    \item Google. Le forum officiel de python pour la documentation de la bibliothèque Tkinter\\
+    URL: \link{https://docs.python.org/3/library/tkinter.html}
+    \item Python Doctor. Interface graphique Tkinter python\\
+    URL: \link{https://python.doctor/page-tkinter-interface-graphique-python-tutoriel}
+    \item Tutorialspoint. Python guide pour l'interface graphique et la bibliothèque Tkinter \\
+    URL: \link{https://www.tutorialspoint.com/python/python_gui_programming.htm}
+    \item Realpython. The perfect guid for Tkinter in python\\
+    URL: \link{https://realpython.com/python-gui-tkinter/}
+    
+\end{enumerate}
+\addcontentsline{toc}{chapter}{Webographie} 
 \end{document}
