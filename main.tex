@@ -5,6 +5,7 @@
 \usepackage{graphicx} 
 \usepackage{fullpage}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \usepackage{xcolor}
 \newcommand{\link}[1]{{\color{blue}\href{#1}{#1}}}
 \usepackage{array,multirow,makecell}
@@ -43,7 +44,7 @@ Autour du langage de dessin vectoriel asymptote} \\[0.4cm]
 \end{minipage}
 \vfill
 % Bottom of the page
-{\large 12/04/2021}
+{\large Année universitaire 2020/2021}
 \end{center}
 \end{titlepage}
 \begin{figure}
@@ -226,30 +227,101 @@ emissivepen=black specularpen=black));}\\
     \includegraphics{images/Des6.png}
 \end{center}
 \newpage
-\section{Cadre de projet}
-\subsection{Objectifs du projet}
+\section{La démarche de projet}
+\subsection{Préparation et analyse}
+Notre objectif principale de ce projet est d'aider les élèves du lycée et leurs enseignant à illustrer les notions de géométrie et surtout dans l'espace.\\
+Aujourd'hui des nombreux écoles sont fermées, et tous les cours en salle de classe ont été transférés en ligne, dans le cadre des mesures visant à contenir tout danger de propagation du COVID-19. Donc, l’enseignement en ligne est une précaution importante pour s’assurer de limiter les possibilités de transmission du virus. C’est la période de l’école à la maison pour de nombreux enfants. C’est-à-dire, que chaque famille a accès aux ressources en ligne : des exercices et même des «classes virtuelles» en visioconférence.\\
+Les enseignants utilisent les ordinateurs pour préparer des présentations ou des lectures. Les ordinateurs sont utilisés pour effectuer des exercices ou diriger des examens. Dans le domaine de la recherche les ordinateurs sont utilisés pour accéder aux journaux, aux conférences et aux travaux des recherches tenues dans le monde entier.\\
+Et pour que notre application soit utile, pratique et accessible, EasyGio doit être sous forme d'une application bureau pour faciliter à l'enseignant ou l'élève l'utilisation de note application. 
+\subsection{Définition des objectifs}
+Pour que notre application soit utile, les objectifs d'EasyGio doivent être « SMART », à savoir :
+\begin{itemize}
+    \item[$\bullet$] \textbf{Spécifique : }Crée une application rapide, simple et très accessible qui permet à l'utilisateur de tracer des courbes, des graphe 2D sous Image PNG et des figures en 3D.
+    \item[$\bullet$] \textbf{Mesurable : }Avec la technologie Git Il était possible de mesurer notre avancement jusqu'à la réalisation complète de notre application EasyGio.
+    \item[$\bullet$] \textbf{Acceptable : }l’objectif était suffisamment complexe pour être motivant et suffisamment petit pour être atteignable et accepté.
+    \item[$\bullet$] \textbf{Réaliste : }Malgré les difficultés de ce projet et en particulier le fait de traiter un sujet d’actualité avec peu de documentation, nous sommes parvenues à nous familiariser avec ces nouvelles technologies liées au Asymptote
+    \item[$\bullet$] \textbf{Temporellement définit : }Notre objectif était bien défini dans le temps après quant a pu fixer une date butoir est indispensable pour pouvoir mesurer l’avancement de la réalisation.
+\end{itemize}
+\subsection{Conception et spécifications}
+\subsubsection{Contexte pédagogique}
+Ce travail s'inscrit dans le cadre du Projet de Fin d'Étude pour l'obtention du diplôme de l'École Supérieur de Technologie Safi, filière Génie Informatique. Au cour de la réalisation de notre projet, nous étions indispensable de mettre en place nos compétences acquises tout long de notre parcours académique pour parvenir à résoudre efficacement les problèmes obtenu à travers des solutions pratique répondant aux besoins de notre sujet du PFE.
+\subsubsection{Acteurs du projet}
+\begin{table}[!h]
+    \centering
+    \begin{tabularx}{0.9\textwidth}{
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X |}
+    \hline
+        \textbf{Acteur}&\textbf{Fonction}\\
+    \hline
+        Maitre d'oeuvre 1 : El Mehdi El Aine & Etudiant à EST safi\\
+    \hline    
+        Maitre d'oeuvre 2 : Hamza Hamdoun & Etudiant à EST safi\\
+    \hline
+        Maitre d'oeuvre 3 : Abdrahman El Hadere & Etudiant à EST safi\\
+    \hline
+        Encadrant pédagogique & Mr.Hamid Maarouf\\
+    \hline 
+        Tuteur & Lbakali Hanane\\
+    \hline    
+    \end{tabularx}
+    \caption{Les Acteurs du projet}
+    \label{tab: Les Acteurs du projet}
+\end{table}   
+\newpage
+\subsubsection{Expression du besoin}
 Ce projet vise principalement à améliorer un service qui aide les élèves du lycée et leurs enseignant à illustrer les notions de géométrie. L’objectif de ce projet est de déployer une application Windows qui se caractérise par une haute disponibilité ,une simplicité et la multiplication des choix.Par conséquence cela revient à déployer une application EasyGio qui répond aux exigences suivants:
 \begin{itemize}
     \item Faciliter l'utilisation de l'application EasyGio pour le client.
     \item Éviter les tâches répétitives et faciliter la personnalisation EasyGio.
     \item Inclure des multiples fonctions pour la conceptions des différents figures.
-    \item Conception d'une interface graphique simple et facile à utiliser.\\
+    \item Conception d'une interface graphique simple et facile à utiliser.
 \end{itemize}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=13cm]{images/EasyGioServices.png}
-    \caption{Processus souhaité de déploiement des services EasyGio}
-    \label{fig:Processus souhaité de déploiement des services EasyGio}
+    \includegraphics[width=14cm]{images/Expression du besoin.png}
+    \caption{Diagramme bête à cornes}
+    \label{fig:Diagramme bête à cornes}
 \end{figure}
-\subsection{Planification du projet}
+\subsubsection{Contraintes à respecter}
 Notre projet est loin d’être classique. En effet, il fait appel aux technologies non abordées le long de notre parcours scolaire. Du coup, une planification rigoureuse s’est imposée pour prévoir le déroulement du projet. Grâce aux réunions tenues avec notre encadrante , nous avons été éclairés sur les différentes étapes du projet ainsi que leurs séquencements. Le projet est partagé en trois grandes étapes : la première est une phase de documentation dont les objectifs est de bien assimiler les nouveaux concepts concernant les langages de programmation Asymptote et Python, d’autre part de délimiter le périmètre du projet au niveau
 fonctionnel qu’au niveau technique. La seconde partie est consacrée à la conception de la solution, quant à la troisième étape, elle traite la mise en œuvre de la solution à travers la réalisation, les tests, et le déploiement.\\
-Le projet a débuté le 1 mars pour une durée de 3 mois. Il en résulte le planning suivant :
+Notre projet doit être exécuter et fournit tout en tenant compte des contraintes qui doivent être anticipés afin d'être gérées et déposées pour ne pas bouleverser le bon déroulement du projet
+\begin{itemize}
+    \item[$\bullet$] \textbf{Contraintes temporelles : }Contrainte majeure qui réside dans la durée nécessaire pour achever notre projet vu la diversité des taches qui sont affectées.\\
+    Le projet a débuté le 1 mars pour une durée de 3 mois. Il en résulte le planning suivant :
+\end{itemize}
+\newpage
 \begin{figure}[!h]
     \centering
-    \rotatebox{-90}{\includegraphics[width=23cm]{images/Ganter.png}}
+    \rotatebox{-90}{\includegraphics[width=22cm]{images/Ganter.png}}
     \caption{Diagramme de Gantt}
     \label{fig:Diagramme de Gantt}
+\end{figure}
+\newpage
+\renewcommand{\labelitemi}{\textbullet}
+\renewcommand\labelitemii{\textperiodcentered}
+\begin{itemize}
+    \item \textbf{Contraintes de réalisation : }
+    \begin{itemize}
+        \item Le respect de la période fixée pour la finalisation du projet.
+        \item Le travail réalisé dans chaque partie doit être valider par notre tuteur. 
+    \end{itemize}\smallskip
+    \item \textbf{Contraintes pédagogiques : }
+    \begin{itemize}
+        \item Appliquer les techniques et méthodes en informatique ainsi que la gestion de projet. 
+        \item Apprendre d'être autonomes dans la réalisation d'un projet.
+        \item Apprendre à collecter les information nécessaire au déroulement du projet.
+    \end{itemize}    
+\end{itemize}
+\subsection{Réalisation et Évaluation}
+A la fin du notre projet on a obtenu une application EasyGio rapide simple et très accessible qui permet l’utilisateur de tracer des courbes, des graphe 2D sous Image PNG et des figures en 3D avec la possibilité de le transférer sous Des images PNG après que le client à bien sélectionner la position d’image voulu. Et à la fin de la session l’utilisateur peut transfère son image à son PC en le télécharger après la sélection de l’emplacement du ficher.\\
+Après Des multiples tests par des différents utilisateurs on a bien corrigé tout les bug obtenu sous nos tests.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]{images/EasyGioServices.png}
+    \caption{Les services proposés par EasyGio}
+    \label{fig:Les services proposés par EasyGio}
 \end{figure}
 \chapter{Conception et réalisation}
 \section{Diagramme des cas d'utilisations}
@@ -299,8 +371,8 @@ Une structure de répartition du travail (WBS) est une dé-construction visuelle
 \begin{figure}[!h]
     \centering
     \includegraphics[width=15cm]{images/WBS.png}
-    \caption{WBS diagram}
-    \label{WBS diagram}
+    \caption{WBS diagramme}
+    \label{WBS diagrammme}
 \end{figure}
 \newpage
 \section{Environnements de travail et choix techniques}
@@ -313,7 +385,7 @@ Les principaux logiciels utilisé durant la conception d'EasyGio sont:
     \item  \textbf{Microsoft Office :} World 2019 pour la rédaction du cahier des charges.
     \item  \textbf{Gantter project :} Pour la rédaction du diagramme gant.
     \item  \textbf{Adobe :} utilisé pour le traitement des images utilisées tout le long du projet que ce soit dans la conception du logo dans le rapport élaboration du cahier de charge ou le développement de l’application.
-    \item  \textbf{Draw.io:} Pour la rédaction des différents diagrammeS et organigrammes pour le rapport.
+    \item  \textbf{Draw.io:} Pour la rédaction des différents diagrammes et organigrammes pour le rapport.
 \end{itemize}
 \subsection{Langage de programmation et technologies utilisés}
 Durant notre travail, on a utiliser plusieurs outils et technologies :
@@ -337,7 +409,7 @@ On a utilisé la bibliothèque Tkinter pour la conception d'interface graphique 
     \label{Tkinter}
 \end{figure}
 \subsubsection{OS}
-Le module OS de Python fournit des fonctions d'interaction avec le système d'exploitation. Le système d'exploitation relève des modules utilitaires standard de Python. Ce module offre un moyen portable d'utiliser les fonctionnalités dépendant du système d'exploitation. Les modules "os" et "os.path" incluent de nombreuses fonctions pour interagir avec le système de fichiers.\\
+Le module OS de Python fournit des fonctions d'interaction avec le système d'exploitation. Le système d'exploitation relève des modules utilitaires standard de Python. Ce module offre un moyen portable d'utiliser les fonctionnalités dépendant du système d'exploitation. Les modules "os" et "os.path" incluent de nombreuses fonctions pour interagir avec le système de fichiers.
 \subsubsection{Time}
 Le module Time fournit différentes fonctions liées au temps.On a utilisé ce module pour la fonction time.sleep(), cette fonction permet au programme d'obtenir un retard de temps jusqu'à le fichier Dessin.asy s'exécute en donnant l'image Dessin.png a afficher sur dernier interface du programme. 
 \newpage
@@ -347,9 +419,18 @@ La bibliothèque supporte plusieurs formats de fichier, parmi lesquels PNG, JPEG
 On a utilisé cette bibliothèque pour le traitement et l'affichage des images sur notre application EasyGio ,l'affichage du logo sur les différents pages d'EasyGio et l'affichage du résultat à la fin d'exécution du programme Dessin sous PNG.
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=10cm]{images/pillow-logo-248x250.png}
+    \includegraphics[width=7cm]{images/pillow-logo-248x250.png}
     \caption{Pillow}
     \label{fig:Pillow}
+\end{figure}
+\subsubsection{SymPy}
+SymPy est une bibliothèque Python pour les mathématiques symboliques. Il vise à devenir un système d'algèbre d'ordinateur complets (CAS) tout en maintenant le code aussi simple que possible afin d'être compréhensible et facilement extensible.
+On a utilisé cette bibliothèque pour le calcule des dérivées des fonctions.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=7cm]{images/SymPy.png}
+    \caption{SymPy}
+    \label{fig:SymPy}
 \end{figure}
 \chapter{Présentation de l'application}
 \section{Interface d'accueil}
@@ -361,43 +442,44 @@ On a utilisé cette bibliothèque pour le traitement et l'affichage des images s
 \end{figure}
 Cette interface représente la page d'accueil sur laquelle on peut démarrer notre session en appuyant sur la bouton Démarrer.
 \newpage
-\section{Interfaces de choix de section}
+\section{Interface de choix de section}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{images/Interface2.PNG}
-    \caption{Interfaces de choix de section}
-    \label{fig:Interfaces de choix de section}
-\end{figure}\\
+    \caption{Interface de choix de section}
+    \label{fig:Interface de choix de section}
+\end{figure}
 Depuis cette interface on peut choisir la partie ou la section voulu.\\
 Si on choisit la partie des fonctions on va être rédiger vers une nouvelle page pour choisir le type du fonction Définit ou In-Définit.\\
 Et si on choisi la partie de Géométrie dans l'espace on va être rédiger vers nouvelle page pour choisir la partie souhaiter Un sphère, un cube ou la partie des vecteurs.
-\section{Interface de choix des sous parties}
+\section{Interfaces de choix des sous parties}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=15cm]{images/TypesCaptures.PNG}
-    \caption{Interface de choix des sous parties}
-    \label{fig:Interface de choix des sous parties}
+    \caption{Interfaces de choix des sous parties}
+    \label{fig:Interfaces de choix des sous parties}
 \end{figure}
 Depuis ces interfaces on peut choisir la sous partie des fonctions et d'espace géométrique.\\
 Chaque bouton nous dirige vers une nouvelle page pour saisi les paramètres requit pour chaque diffèrent type.
 \newpage
 \section{Interfaces des insertion des paramètres}
-\subsection{Interface des fonctions}
+\subsection{Interfaces des fonctions}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=14cm]{images/InputesInter.PNG}
-    \caption{Interface d'insertion des paramètres des fonctions}
-    \label{fig:Interface d'insertion des paramètres des fonctions}
+    \includegraphics[width=15cm]{images/InputesInter.PNG}
+    \caption{Interfaces d'insertion des paramètres des fonctions}
+    \label{fig:Interfaces d'insertion des paramètres des fonctions}
 \end{figure}
 Depuis ces deux interfaces l'utilisateur peut saisir les paramètres des fonction.\\
-L'interface à gauche est celle du fonction définit sur la quelle le client doit insérer une fonction d'un seul variable $x$. Et après en cliquant sur la bouton Exécuter le client va être rédiger sur la dernier interface du programme pour l'affichage de la figure sous forme image.\\
+L'interface à gauche est celle du fonction définit sur la quelle le client doit insérer une fonction d'un seul variable $x$, l'utilisateur peut choisir l'affichage de la courbe de la fonction dérivée avec le résultat ou non en cochant la case d'affichage. Et après en cliquant sur la bouton Exécuter le client va être rédiger sur la dernier interface du programme pour l'affichage de la figure sous forme image.\\
 L'interface à droit est celle du fonctions Indéfini et sur la quelle l'utilisateur doit saisir une fonction de deux variable $x$ et $y$ et les sommets de la courbe.Et après en cliquant sur la bouton Exécuter le client va être rédiger sur la dernier interface du programme pour l'affichage de la figure sous forme image.\\
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=14cm]{images/Fonction.PNG}
+    \includegraphics[width=15cm]{images/Fonction.PNG}
     \caption{Exécution d'une fonction (Courbe)}
     \label{fig:Exécution d'une fonction (Courbe)}
-\end{figure}
+\end{figure}\\
+C'est deux interfaces sont l'exécution de la fonction $f(x)=3x^2+2x+2$, l'interface à gauche est celle de l'exécution normal de la fonction et l'interface à droite est l'exécution de la fonction avec l'affichage du courbe de la fonction dérivée.
 \newpage
 \subsection{Interfaces de Sphère et de Cube}
 \begin{figure}[!h]
@@ -407,7 +489,7 @@ L'interface à droit est celle du fonctions Indéfini et sur la quelle l'utilisa
     \label{fig:Interfaces de Sphère et de Cube}
 \end{figure}
 L'interface à gauche est l'interface pour l'exécution de la figure sphère et sur la quel l'utilisateur a plusieurs choix et options à ajouter, le premier est pour l'affichage des axes X,Y et Z pour le repérage dans le plan et dans l'espace.Le deuxième choix et l'option d'obtenir le résultats final sous forme d'une image PNG à la fin d'exécution du programme. L'utilisateur peut choisir les deux choix à la fois ou un seul choix ou exécuter le programme sans aucun choix.\\
-L'interface à droite est celle du Cube où l'utilisateur doit saisir d'abord la taille du cube et qui doit être un nombre entier et supérieur à 0 sinon le système va afficher un erreur.\\
+L'interface à droite est celle du Cube où l'utilisateur doit saisir d'abord la taille du cube et qui doit être un nombre entier et supérieur à 0 sinon le système va afficher un erreur. avec la possibilité d'afficher le milieu du cube en cochant la première case.\\
 \begin{figure}[!h]
     \centering
     \includegraphics{images/NbError.PNG}
@@ -422,6 +504,14 @@ La deuxième bouton et le choix d'obtenir le résultat sous forme d'une image PN
     \caption{Exécution d'une figure 3D (cube)}
     \label{fig:Exécution d'un figure 3D (cube)}
 \end{figure}\\
+Avant le lancement du programme le système affiche un message texte  avec laquelle l'utilisateur va savoir comment transformer le programme 3D à une photo.\\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=11cm]{images/3DToImage.PNG}
+    \caption{Comment transformer une Figure 3D à une image}
+    \label{fig:Comment transformer une Figure 3D à une image}
+\end{figure}
+\newpage
 \subsection{Interface de choix des figures pour les vecteurs}
 \begin{figure}[!h]
     \centering
@@ -435,6 +525,7 @@ Sur cette interface l'utilisateur peut choisit l'exécution d'une seule figure s
     \item Addition de deux vecteurs par règle du triangle.
     \item Multiplication de deux vecteurs.
 \end{itemize}
+\newpage
 \subsection{L'interface d'affichage de résultat par Image}
 Sur cette dernier interface d'EasyGio il y'a l'affichage de la figure et l'utilisateur peut télécharger sa figure sous forme PNG en cliquant sur la bouton Télécharger avec la quel une fenêtre va être afficher où il peut choisir la position où le fichier Dessin.png va être télécharger.\\
 \begin{figure}[!h]
@@ -450,7 +541,15 @@ Si non il va afficher une notification que le fichier a bien été télécharger
     \includegraphics[width=14cm]{images/nots.PNG}
     \caption{EasyGio Info et Erreur fenêtres}
     \label{fig:EasyGio Info et Erreur fenêtres}
-\end{figure}\\
+\end{figure}
+\chapter*{Conclusion Générale et Perspectives}
+Étape indispensable lors des cours traditionnels de mathématiques, la géométrie a, de tout temps, souffert d'une réputation de matière difficile ! Des droits parallèles que l'on n'arrive pas à tracer, en passant par une intersection difficile à déterminer, ou des cercles peu assurés, la géométrie est parfois repoussée par les élèves.\\
+Pourtant, la géométrie est particulièrement utile dans la vie de tous les jours et permet d'accéder à des carrières prestigieuses comme ingénieur ou chercheur en mathématiques. Autant de professions qui, si elles ne semblent pas être directement liées au quadrilatère et à la demi-droite, le sont bien plus qu'on ne le pense !\\
+De plus, la géométrie subit une réputation de branche assez fermée, de domaine dédiée aux matheux et aux matheuses. Contrairement aux apparences, cette branche des maths est accessibles à tous les niveaux et peut même s'avérer être ludique, faisant travailler à la fois sa logique et sa réflexion. Un peu comme les jeux des enfants quoi !\\
+\par Les solutions de notre application EasyGio sont des outils indispensables pour répondre à ces exigences. En effet, EasyGio vous permet de construire des multiple figures rapidement et en simple clics. l'application et facilement accessible . Vous pouvait aussi construire des figures 3D et les exporter sous des images PNG avec toute rapidité.\\
+\par Malgré les difficultés rencontrées durant ce projet et en particulier le fait de traiter un sujet d’actualité avec peu de documentation, nous sommes parvenues à nous familiariser avec ces nouvelles technologies liées au Asymptote.\\
+Et crée une application qui va très faciliter l'illustration des notions de géométrie et surtout dans l'espace à travers notre système des figures 3D en utilisant le langage graphique vectoriel Asymptote pour les enseignants et ces élevés.\\ 
+\addcontentsline{toc}{chapter}{Conclusion Générale et Perspectives}
 \chapter*{Webographie}
 \begin{enumerate}
     \item Google. Le forum officiel d'asymptote pour les documentations\\
@@ -465,6 +564,10 @@ Si non il va afficher une notification que le fichier a bien été télécharger
     URL: \link{https://www.researchgate.net/publication/242776997_Asymptote_The_Vector_Graphics_Language}
     \item Asymptote. (Vector Graphics Language)\\
     URL: \link{https://artofproblemsolving.com/}
+    \item Links to many external resources, including an excellent user-written Asymptote tutorial.\\
+    URL : \link{https://asymptote.sourceforge.io/links.html}
+    \item A quick reference card for Asymptote.\\
+    URL : \link{https://asymptote.sourceforge.io/asyRefCard.pdf}
     \item Google. Le forum officiel de python pour la documentation de la bibliothèque Tkinter\\
     URL: \link{https://docs.python.org/3/library/tkinter.html}
     \item Python Doctor. Interface graphique Tkinter python\\
@@ -473,6 +576,10 @@ Si non il va afficher une notification que le fichier a bien été télécharger
     URL: \link{https://www.tutorialspoint.com/python/python_gui_programming.htm}
     \item Realpython. The perfect guid for Tkinter in python\\
     URL: \link{https://realpython.com/python-gui-tkinter/}
+    \item Keepscool. Un site web pour les cours du maths au lycée pour avoir les principaux propriétés.\\ 
+    URL : \link{http://keepschool.com/fiches-de-cours/lycee/math/vecteurs.html}
+    \item Alloschool. AlloSchool est un site de support pédagogique il propose un suivi chronologique par chapitre, comprenant des cours, des exercices corrigés et des examens.\\
+    URL : \link{https://www.alloschool.com/}
     
 \end{enumerate}
 \addcontentsline{toc}{chapter}{Webographie} 
