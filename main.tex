@@ -16,14 +16,22 @@
 \usepackage{eso-pic}
 \begin{document}
 \begin{titlepage}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{images/ESTS_logo.png}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=1.1\linewidth]{images/Université-Cadi-Ayyad.jpg}
+   \end{minipage}
+\end{figure}~\\[1cm]
 \begin{center}
-
-\includegraphics[width=0.35\textwidth]{./images/ESTS_logo.png}~\\[2cm]
-{\huge \bfseries Rapport du PFE}\\[0.4cm]
+{\huge \bfseries Rapport de PFE}\\[0.4cm]
 % Title
 \HRule \\[0.4cm]
-{\huge \bfseries \includegraphics[width=0.25\textwidth]{./images/logo.png}~\\[0.5cm]
-Autour du langage de dessin vectoriel asymptote} \\[0.4cm]
+{\huge \bfseries \includegraphics[width=0.3\textwidth]{images/logox2.png}~\\[0.5cm]
+Autour du langage de dessin vectoriel \\[0.2cm] asymptote} \\[0.4cm]
 \HRule \\[1.5cm]
 % Author and supervisor
 \begin{minipage}{0.4\textwidth}
@@ -37,7 +45,7 @@ Autour du langage de dessin vectoriel asymptote} \\[0.4cm]
 \begin{minipage}{0.4\textwidth}
 \begin{flushright} \large
 \emph{Encadrer par:} \\
-\textsc{Mr Hamid Maarouf}\\
+\textsc{Mer Hamid Maarouf}\\
 \emph{Tuteur:} \\
 \textsc{Lbakali Hanane}\\
 \end{flushright}
@@ -81,21 +89,19 @@ Pour votre gentillesse, votre compréhension, pour les beaux moments\\ qu’on a
 \begin{flushright}
 \textbf{EL MEHDI EL AINE}
 \end{flushright}
-\addcontentsline{toc}{chapter}{Dédicace}  
 \chapter*{Remerciements}
 Au terme de ce travail, nous tenons à exprimer notre profonde gratitude et nos sincères remerciements pour tous ceux qui nous ont aidés de près ou de loin pendant la durée de réalisation de notre projet.\\\\
-\par Nous tenons également à remercier Monsieur Hamid Maarouf, professeur à l’EST Safi pour son encadrement, son enthousiasme vis-à-vis notre projet et ses encouragements. Nos sincères remerciements sont à adresser à Mme.Lbakali Hanane qui elle a fait l’honneur de nous encadrer tout au long de ce travail. Nous l'en sommes très reconnaissants pour ses fructueux conseils et précieuses directives, et pour le grand souci qu’elle porte à l’égard de notre sujet.Un très grand merci à M.Belkharchi Driss notre ancien professeur du math au lycée 6 novembre qui nous a très aider pour la réalisation de ce projet.\\\\
-\par Remerciements spéciaux à tout le corps professoral de l'EST SAfi, pour la formation de qualité qu’ils nous ont prodiguée durant ces deux années. Que tous ceux et celles qui ont contribué de près ou de loin à l’accomplissement de ce travail trouvent l’expression de nos
+\par Nous tenons également à remercier Monsieur Hamid Maarouf, professeur à l’EST Safi pour son encadrement, son enthousiasme vis-à-vis notre projet et ses encouragements. Nos sincères remerciements sont à adresser à Lbakali Hanane qui elle a fait l’honneur de nous encadrer tout au long de ce travail. Nous l'en sommes très reconnaissants pour ses fructueux conseils et précieuses directives, et pour le grand souci qu’elle porte à l’égard de notre sujet.Un très grand merci à Mer.Belkharchi Driss notre ancien professeur du math au lycée 6 novembre qui nous a très aider pour la réalisation de ce projet.\\\\
+\par Remerciements spéciaux à tout le corps professoral de l'EST Safi, pour la formation de qualité qu’ils nous ont prodiguée durant ces deux années. Que tous ceux et celles qui ont contribué de près ou de loin à l’accomplissement de ce travail trouvent l’expression de nos
 remerciements les plus chaleureux.
-\addcontentsline{toc}{chapter}{Remerciements} 
 \tableofcontents
 \newpage
 \listoffigures
 \newpage
 \listoftables
 \chapter*{Introduction}
-Dans ce rapport du projet de fin d'études sont présentées les différentes étapes de conception et de réalisation d’une application de bureau autour du langage de dessin vectoriel Asymptote EasyGio réaliser par le trinôme El Aine El Mehdi, Hamdoun Hamza et El Hadere Abdrahmane,en tant qu’étudiants en Génie Informatique à l’école supérieure de technologie à SAFI. L'objet principal de notre application est d'aider les élèves du lycée et leur enseignant à illustrer les notions de géométrie, et pour savoir les besoins des professeurs au niveau de géométrie on a contacté notre ancien prof, monsieur Belkharchi Driss qui nous a donné les principales parties étudier au lycée.\\
-Ce rapport détaillera les différents phases dont nous sommes passées par afin d'aboutir à une application fiable et satisfaisante. Pour cela le rapport définit le travail qui nous avons effectué. Il est composée par trois grands parties. La premier partie aura pour présenter le contexte du projet et spécification des besoins, la deuxième est consacré aux conception. La dernier partie comporte les résultats obtenus.\\[0.4cm]
+Dans ce rapport du projet de fin d'études sont présentées les différentes étapes de conception et de réalisation d’une application de bureau autour du langage de dessin vectoriel Asymptote EasyGio réalisé par le trinôme El Aine El Mehdi, Hamdoun Hamza et El Hadere Abdrahmane,en tant qu’étudiants en Génie Informatique à l’École Supérieure de Technologie à Safi. L'objet principal de notre application est d'aider les élèves du lycée et leur enseignant à illustrer les notions de géométrie, et pour savoir les besoins des professeurs au niveau de géométrie on a contacté notre ancien prof, monsieur Belkharchi Driss qui nous a donné les principales parties étudier au lycée.\\
+Ce rapport détaillera les différents phases dont nous sommes passées afin d'aboutir à une application fiable et satisfaisante. Pour cela le rapport définit le travail que nous avons effectué. Il est composée par trois grandes parties. La première partie pour présenter le contexte du projet et spécification des besoins, la deuxième est consacré à la conception. La dernière partie comporte les résultats obtenus.\\[0.4cm]
     \begin{figure}[!h] 
         \centering       
         \includegraphics[width=15cm]{images/asymptote.png}\\ \caption{Asymptote} \label{Asymptote} 
@@ -109,7 +115,7 @@ Ce rapport détaillera les différents phases dont nous sommes passées par afin
     \caption{Géométrie}
     \label{fig:Géométrie}
 \end{figure}
-Droites, rectangle, angles droits, polygones, axiomes, autant de termes qui appartiennent à un champ bien spécifique de l'enseignement, que tout le monde a connu ou connaîtra dans sa scolarité, voire au delà. Eh oui, la géométrie, si elle ne se résume pas à un triangle rectangle, est un champ de connaissance riche et vaste, inhérent aux maths.
+Droites, rectangles, angles droits, polygones, axiomes, autant de termes qui appartiennent à un champ bien spécifique de l'enseignement, que tout le monde a connu ou connaîtra dans sa scolarité, voire au delà. Eh oui, la géométrie, si elle ne se résume pas à un triangle rectangle, est un champ de connaissance riche et vaste, inhérent aux maths.
 Étape indispensable lors des cours traditionnels de mathématiques, la géométrie a, de tout temps, souffert d'une réputation de matière difficile! Des droits parallèles que l'on n'arrive pas à tracer, en passant par une intersection difficile à déterminer, ou des cercles peu assurés, la géométrie est parfois repoussée par les élèves.\\
 Pourtant, la géométrie est particulièrement utile dans la vie de tous les jours et permet d'accéder à des carrières prestigieuses comme ingénieur ou chercheur en mathématiques. Autant de professions qui, si elles ne semblent pas être directement liées au quadrilatère et à la demi-droite, le sont bien plus qu'on ne le pense !\\
 \begin{center}
@@ -128,7 +134,7 @@ Un avantage majeur de Asymptote sur les autres logiciels graphiques est qu'il es
 \begin{itemize}
 \item Fournit un standard portable pour la composition de figures mathématiques, tout comme\\  TeX / LaTeX est devenu la norme pour la composition d'équations.
 \item Génère des graphiques vectoriels PostScript, PDF, SVG, WebGL et PRC de haute qualité.
-\item Incorpore des graphiques WebGL vectoriels 3D dans des fichiers HTML incorpore des graphiques   3D vectoriels PRC dans des fichiers PDF.
+\item Incorpore des graphiques WebGL vectoriels 3D dans des fichiers HTML et incorpore des graphiques   3D vectoriels PRC dans des fichiers PDF.
 \item Fonctionne sur toutes les principales plates-formes (LUNIX, MacOS, Microsoft Windows).
 \item Les commandes graphiques de haut niveau sont implémentées dans le langage asymptote lui-même, ce qui leur permet d'être adaptées à des applications spécifiques.
 \end{itemize}
@@ -141,18 +147,16 @@ En fait, les définitions de fonctions ne sont que du "syntactic sugar -en angla
 \textbf{real square(real x) return $x^2$;}\\
 est équivalant à\\
 \textbf{real square(real x);  square=new real(real x) return $x^2$;}\smallskip\\
- \par Asymptote prend en charge un mécanisme plus flexible pour les arguments de fonction par défaut que C++: ils peuvent apparaissent n'importe où dans le prototype de fonction. Cette fonctionnalité sous-tend la plus grande force d'Asymptote, des valeurs par défaut raisonnables pour les éléments graphiques de base permettent de créer de superbes graphiques et dessins avec des scripts extrêmement courts, sans sacrifier le flexibilité pour une personnalisation détaillée. Les arguments par défaut sont évalués comme des expressions Asymptote dans le portée où la fonction est définie.\\
-Paramètres du reste permettent d'écrire des fonctions prendre un nombre variable d'arguments. Par exemple, la fonction suivante additionne ses arguments:\\
+ \par Asymptote prend en charge un mécanisme plus flexible pour les arguments de fonction par défaut que C++: ils peuvent apparaitre n'importe où dans le prototype de fonction. Cette fonctionnalité sous-tend la plus grande force d'Asymptote, des valeurs par défaut raisonnables pour les éléments graphiques de base permettent de créer de superbes graphiques et dessins avec des scripts extrêmement courts, sans sacrifier le flexibilité pour une personnalisation détaillée. Les arguments par défaut sont évalués comme des expressions Asymptote dans la portée où la fonction est définie.\\
+Paramètres du reste permettent d'écrire des fonctions prenant un nombre variable d'arguments. Par exemple, la fonction suivante additionne ses arguments:\\
 \includegraphics[width=5cm]{images/cap2.png}\\
 \par Comme dans d'autres langues modernes, les fonctions peuvent appeler
-eux-mêmes récursivement. Opérateurs, y compris tous les
-Les opérations d'arithmétique et de chemin intégrées d'Asymptote,
+eux-mêmes récursivement. Opérateurs, y compris tout les opérations d'arithmétique et de chemin intégré d'Asymptote,
 ne sont que du syntactic sugar pour des fonctions qui peuvent être
-adressé et défini avec le mot-clé opérateur.
-Les fonctions asymptotes sont des valeurs de première classe, ce qui leur permet d'être définies dans, transmises à et
-renvoyé par d'autres fonctions. Ceci est pratique lorsque
-on veut tracer une séquence de fonctions telles que:
-\textbf{fn(x) = n sin($x/n$) for  n = 1 to 5 from x = −10 to 10}\\
+adressées et définies avec le mot-clé opérateur.
+Les fonctions asymptotes sont des valeurs de premièr classe, ce qui leur permet d'être définies dans, transmises à et
+renvoyé par d'autres fonctions. Ceci est pratique lorsqu'on veut tracer une séquence de fonctions telles que:
+\textbf{fn(x) $=$ n sin($x/n$) for  n $=$ 1 to 5 from x $=$ −10 to 10}\\
     \begin{figure}[!h] 
         \centering
         \includegraphics[width=5cm]{images/cap1.png}
@@ -215,7 +219,7 @@ real f(real x) {return 2cos(x) + cos(2x);}\\
 path p=graph(f,-2*pi-.5,2*pi+.5,operator ..);\\
 draw(p,red);}\\
 \subsubsection{Three}
-Le module three apporte un grand nombre d’outils permettant de faciliter la construction des figures 3D ,ce module permet de construire les sphères,les cubes..etc\\
+Le module Three apporte un grand nombre d’outils permettant de faciliter la construction des figures 3D ,ce module permet de construire les sphères,les cubes..etc\\
 Prenant par exemple le code suivant qui nous donne un sphère:\\
 Code:\\
 \textbf{import three;\\
@@ -229,18 +233,18 @@ emissivepen=black specularpen=black));}\\
 \newpage
 \section{La démarche de projet}
 \subsection{Préparation et analyse}
-Notre objectif principale de ce projet est d'aider les élèves du lycée et leurs enseignant à illustrer les notions de géométrie et surtout dans l'espace.\\
-Aujourd'hui des nombreux écoles sont fermées, et tous les cours en salle de classe ont été transférés en ligne, dans le cadre des mesures visant à contenir tout danger de propagation du COVID-19. Donc, l’enseignement en ligne est une précaution importante pour s’assurer de limiter les possibilités de transmission du virus. C’est la période de l’école à la maison pour de nombreux enfants. C’est-à-dire, que chaque famille a accès aux ressources en ligne : des exercices et même des «classes virtuelles» en visioconférence.\\
+Notre objectif principal de ce projet est d'aider les élèves du lycée et leurs enseignants à illustrer les notions de géométrie et surtout dans l'espace.\\
+Aujourd'hui, des nombreux écoles sont fermées, et tous les cours en salle de classe ont été transférés en ligne, dans le cadre des mesures visant à contenir tout danger de propagation du COVID-19. Donc, l’enseignement en ligne est une précaution importante pour s’assurer de limiter les possibilités de transmission du virus. C’est la période de l’école à la maison pour de nombreux enfants. C’est-à-dire, que chaque famille a accès aux ressources en ligne : des exercices et même des «classes virtuelles» en visioconférence.\\
 Les enseignants utilisent les ordinateurs pour préparer des présentations ou des lectures. Les ordinateurs sont utilisés pour effectuer des exercices ou diriger des examens. Dans le domaine de la recherche les ordinateurs sont utilisés pour accéder aux journaux, aux conférences et aux travaux des recherches tenues dans le monde entier.\\
 Et pour que notre application soit utile, pratique et accessible, EasyGio doit être sous forme d'une application bureau pour faciliter à l'enseignant ou l'élève l'utilisation de note application. 
 \subsection{Définition des objectifs}
 Pour que notre application soit utile, les objectifs d'EasyGio doivent être « SMART », à savoir :
 \begin{itemize}
-    \item[$\bullet$] \textbf{Spécifique : }Crée une application rapide, simple et très accessible qui permet à l'utilisateur de tracer des courbes, des graphe 2D sous Image PNG et des figures en 3D.
+    \item[$\bullet$] \textbf{Spécifique : }Crée une application rapide, simple et très accessible qui permet à l'utilisateur de tracer des courbes, des graphes 2D sous Image PNG et des figures en 3D.
     \item[$\bullet$] \textbf{Mesurable : }Avec la technologie Git Il était possible de mesurer notre avancement jusqu'à la réalisation complète de notre application EasyGio.
     \item[$\bullet$] \textbf{Acceptable : }l’objectif était suffisamment complexe pour être motivant et suffisamment petit pour être atteignable et accepté.
-    \item[$\bullet$] \textbf{Réaliste : }Malgré les difficultés de ce projet et en particulier le fait de traiter un sujet d’actualité avec peu de documentation, nous sommes parvenues à nous familiariser avec ces nouvelles technologies liées au Asymptote
-    \item[$\bullet$] \textbf{Temporellement définit : }Notre objectif était bien défini dans le temps après quant a pu fixer une date butoir est indispensable pour pouvoir mesurer l’avancement de la réalisation.
+    \item[$\bullet$] \textbf{Réaliste : }Malgré les difficultés de ce projet et en particulier le fait de traiter un sujet d’actualité avec peu de documentation, nous sommes parvenues à nous familiariser avec ces nouvelles technologies liées à Asymptote
+    \item[$\bullet$] \textbf{Temporellement définit : }Notre objectif était bien défini dans le temps après quant a pu fixer une date butoir est indispensable pour pouvoir mesurer l’avancement de la réalisation de notre projet.
 \end{itemize}
 \subsection{Conception et spécifications}
 \subsubsection{Contexte pédagogique}
@@ -270,7 +274,7 @@ Ce travail s'inscrit dans le cadre du Projet de Fin d'Étude pour l'obtention du
 \end{table}   
 \newpage
 \subsubsection{Expression du besoin}
-Ce projet vise principalement à améliorer un service qui aide les élèves du lycée et leurs enseignant à illustrer les notions de géométrie. L’objectif de ce projet est de déployer une application Windows qui se caractérise par une haute disponibilité ,une simplicité et la multiplication des choix.Par conséquence cela revient à déployer une application EasyGio qui répond aux exigences suivants:
+Ce projet vise principalement à améliorer un service qui aide les élèves du lycée et leurs enseignant à illustrer les notions de géométrie. L’objectif de ce projet est de déployer une application bureau qui se caractérise par une haute disponibilité ,une simplicité et une multiplication des choix.Par conséquence cela revient à déployer une application EasyGio qui répond aux exigences suivantes:
 \begin{itemize}
     \item Faciliter l'utilisation de l'application EasyGio pour le client.
     \item Éviter les tâches répétitives et faciliter la personnalisation EasyGio.
@@ -284,9 +288,8 @@ Ce projet vise principalement à améliorer un service qui aide les élèves du 
     \label{fig:Diagramme bête à cornes}
 \end{figure}
 \subsubsection{Contraintes à respecter}
-Notre projet est loin d’être classique. En effet, il fait appel aux technologies non abordées le long de notre parcours scolaire. Du coup, une planification rigoureuse s’est imposée pour prévoir le déroulement du projet. Grâce aux réunions tenues avec notre encadrante , nous avons été éclairés sur les différentes étapes du projet ainsi que leurs séquencements. Le projet est partagé en trois grandes étapes : la première est une phase de documentation dont les objectifs est de bien assimiler les nouveaux concepts concernant les langages de programmation Asymptote et Python, d’autre part de délimiter le périmètre du projet au niveau
-fonctionnel qu’au niveau technique. La seconde partie est consacrée à la conception de la solution, quant à la troisième étape, elle traite la mise en œuvre de la solution à travers la réalisation, les tests, et le déploiement.\\
-Notre projet doit être exécuter et fournit tout en tenant compte des contraintes qui doivent être anticipés afin d'être gérées et déposées pour ne pas bouleverser le bon déroulement du projet
+Notre projet est loin d’être classique. En effet, il fait appel aux technologies non abordées le long de notre parcours scolaire. Du coup, une planification rigoureuse s’est imposée pour prévoir le déroulement du projet. Grâce aux réunions tenues avec notre tuteure , nous avons été éclairés sur les différentes étapes du projet ainsi que leurs séquencements. Le projet est partagé en trois grandes étapes : la première est une phase de documentation dont les objectifs est de bien assimiler les nouveaux concepts concernant les langages de programmation Asymptote et Python, d’autre part de délimiter le périmètre du projet au niveau fonctionnel qu’au niveau technique. La seconde partie est consacrée à la conception de la solution, quant à la troisième étape, elle traite la mise en œuvre de la solution à travers la réalisation, les tests, et le déploiement.\\
+Notre projet doit être exécuté et fourni tout en tenant compte des contraintes qui doivent être anticipés afin d'être gérées et déposées pour ne pas bouleverser le bon déroulement du projet.
 \begin{itemize}
     \item[$\bullet$] \textbf{Contraintes temporelles : }Contrainte majeure qui réside dans la durée nécessaire pour achever notre projet vu la diversité des taches qui sont affectées.\\
     Le projet a débuté le 1 mars pour une durée de 3 mois. Il en résulte le planning suivant :
@@ -305,18 +308,18 @@ Notre projet doit être exécuter et fournit tout en tenant compte des contraint
     \item \textbf{Contraintes de réalisation : }
     \begin{itemize}
         \item Le respect de la période fixée pour la finalisation du projet.
-        \item Le travail réalisé dans chaque partie doit être valider par notre tuteur. 
+        \item Le travail réalisé dans chaque partie doit être validé par notre tuteur. 
     \end{itemize}\smallskip
     \item \textbf{Contraintes pédagogiques : }
     \begin{itemize}
         \item Appliquer les techniques et méthodes en informatique ainsi que la gestion de projet. 
-        \item Apprendre d'être autonomes dans la réalisation d'un projet.
-        \item Apprendre à collecter les information nécessaire au déroulement du projet.
+        
+        \item Apprendre à collecter les informations nécessaires au déroulement du projet.
     \end{itemize}    
 \end{itemize}
 \subsection{Réalisation et Évaluation}
 A la fin du notre projet on a obtenu une application EasyGio rapide simple et très accessible qui permet l’utilisateur de tracer des courbes, des graphe 2D sous Image PNG et des figures en 3D avec la possibilité de le transférer sous Des images PNG après que le client à bien sélectionner la position d’image voulu. Et à la fin de la session l’utilisateur peut transfère son image à son PC en le télécharger après la sélection de l’emplacement du ficher.\\
-Après Des multiples tests par des différents utilisateurs on a bien corrigé tout les bug obtenu sous nos tests.
+Après Des multiples tests par des différents utilisateurs on a bien corrigé tout les bugs obtenu sous nos tests.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=14cm]{images/EasyGioServices.png}
@@ -324,7 +327,20 @@ Après Des multiples tests par des différents utilisateurs on a bien corrigé t
     \label{fig:Les services proposés par EasyGio}
 \end{figure}
 \chapter{Conception et réalisation}
-\section{Diagramme des cas d'utilisations}
+\section{Diagramme d'ISHIKAWA}
+Il est souvent difficile de connaître les causes réelles et les causes annexes ou parasites d’un problème ou d’un dysfonctionnement majeur. Or, pour apporter des solutions à ce problème, il est important d’identifier les causes déterminantes des causes accessoires.\\
+Pour cela, il est intéressant de construire un diagramme causes-effet. Par une représentation graphique simple qui, pour un effet identifié, (un dysfonctionnement, un processus, une erreur
+majeure…) permet de déterminer l’ensemble des causes principales et secondaires pouvant en être à l’origine.\\
+Et on va représenter ceci par un programme causes-effets qu'est  aussi appelé diagramme d’ISHIKAWA.\\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=15cm]{images/Ishikawa.PNG}
+    \caption{Diagramme d'ISHIKAWA}
+    \label{fig:Diagramme d'ISHIKAWA}
+\end{figure}
+\newpage
+\section{Cas d'utilisations}
+\subsection{Diagramme des cas d'utilisations}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=14cm]{images/MY UML.PNG}
@@ -332,6 +348,7 @@ Après Des multiples tests par des différents utilisateurs on a bien corrigé t
     \label{fig:Cas d'utilisation normale pour l'application}
 \end{figure}
 \newpage
+\subsection{Détails du diagramme des cas d'utilisations}
 \begin{table}[!h]
     \centering
     \begin{tabular}{|L{5cm}|L{10cm}|}
@@ -346,7 +363,7 @@ Après Des multiples tests par des différents utilisateurs on a bien corrigé t
         &\\& Installation de Python3.\\& Installation d'une distribution latex.\\& Installation d'Asymptote sous latex.\\&\\
         \hline
         \multirow{8}{4em}{\textbf{Description :}}
-         &\\& L'utilisateur peut construire des diffèrent graphe des fonction définit avec seul variable x, et in-définit avec deux variable x et y.\\& L'utilisateur peut construire des graphe 3D avec des tailles différents.\\& L'utilisateur peut construire des graphe sur les vecteur 2D sous image PNG.\\& L'utilisateur peut construire des graphe 3D et le transformer sous image PNG.\\& L'utilisateur peut retourner vers la dernière page en appuyant sur la bouton Retourner.\\& L'utilisateur peut retourner vers la page d'accueil en appuyant sur la bouton Annuler.\\&\\
+         &\\& L'utilisateur peut construire de diffèrent graphes de fonction défini avec seule variable x, et in-définie avec deux variable x et y.\\& L'utilisateur peut construire des graphe 3D avec des tailles différents.\\& L'utilisateur peut construire des graphe sur les vecteur 2D sous forme image PNG.\\& L'utilisateur peut construire des graphe 3D et les exportés sous forme image PNG.\\& L'utilisateur peut retourner vers la dernière page en appuyant sur la bouton Retourner.\\& L'utilisateur peut retourner vers la page d'accueil en appuyant sur la bouton Annuler.\\&\\
         \hline
          \multirow{3}{4em}{\textbf{CasDérivé :}} &\\& Si Python ou latex ou Asymptote ne sont pas installé correctement l'application ne peut pas être lancer. \\&\\
         \hline
@@ -356,9 +373,16 @@ Après Des multiples tests par des différents utilisateurs on a bien corrigé t
     \caption{Détails du diagramme des cas d'utilisations pour l'application}
     \label{tab: Détails du diagramme des cas d'utilisations pour l'application}
 \end{table}
+\newpage
+\subsection{Description textuelle détaillé de cas d'utilisation}
+\begin{table}[!h]
+    \includegraphics[width=16cm]{images/TableDescActi.PNG}
+    \caption{Description textuelle détaillé de cas d'utilisation <<Tracer courbe d'une fonction >>}
+    \label{tab: Description textuelle détaillé de cas d'utilisation <<Tracer courbe d'une fonction >>}
+\end{table}
 \section{Diagramme de séquence}
 Le diagramme de séquence représente la succession chronologique des opérations réalisées par un acteur.Il indique les objets que l'acteur va manipuler et les opérations qui font passer d'un objet à l'autre.\\
-Puisque notre application n'utilise ou  ne traître pas des informations saisi par l'utilisateur alors on n'utilise pas une base de données pour gérer les données de l'application, Alors il y'aura une interaction entre l'utilisateur et l'application.
+Puisque notre application ne stock et ne réutilise pas les informations saisi par l'utilisateur alors on n'utilise pas une base de données pour gérer les données de l'application, Alors il y'aura que une interaction entre l'utilisateur et l'application.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=11cm]{images/DS.png}
@@ -376,11 +400,11 @@ Une structure de répartition du travail (WBS) est une dé-construction visuelle
 \end{figure}
 \newpage
 \section{Environnements de travail et choix techniques}
-Cette section met l’accent sur les logiciels utilisés durant ce travail. Puis nous abordons les choix des différentes technologies mises en place.
+Cette section met l’accent sur les logiciels utilisés durant ce travail. Puis nous abordons les différentes technologies mises en place.
 \subsection{Environnements de travail}
 Les principaux logiciels utilisé durant la conception d'EasyGio sont:
 \begin{itemize}
-    \item \textbf{Visual studio code :} Afin d’avoir une bonne aide au développement ainsi qu’une bonne intégration des dfférents outils python Visual Studio Code fut utilisé tout au long du développement, c'est un éditeur de code extensible ses fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré et des extensions qui ajoutent des  fonctionnalités supplémentaires.
+    \item \textbf{Visual studio code :} Afin d’avoir une bonne aide au développement ainsi qu’une bonne intégration des différents outils de python Visual Studio Code fut utilisé tout au long du développement, c'est un éditeur de code extensible ses fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré et des extensions qui ajoutent des  fonctionnalités supplémentaires.
     \item  \textbf{Miktex :} C'est une distribution TeX libre pour Windows visant à fournir un environnement TeX/LaTeX complet et prêt à utiliser, pour exécuter les fichier asymptote et rédiger le rapport.
     \item  \textbf{Microsoft Office :} World 2019 pour la rédaction du cahier des charges.
     \item  \textbf{Gantter project :} Pour la rédaction du diagramme gant.
@@ -388,20 +412,20 @@ Les principaux logiciels utilisé durant la conception d'EasyGio sont:
     \item  \textbf{Draw.io:} Pour la rédaction des différents diagrammes et organigrammes pour le rapport.
 \end{itemize}
 \subsection{Langage de programmation et technologies utilisés}
-Durant notre travail, on a utiliser plusieurs outils et technologies :
+Durant notre travail, on a utilisé plusieurs outils et technologies :
 \subsubsection{Asymptote}
 Asymptote est le Langage de programmation utilisé pour les dessins géométrique pour notre \\application 
 \subsubsection{Git}
 Pour la gestion de version, étant habitué à Git. Cet outil nous a permis tout au long du PFE de garder trace des différentes évolutions de celui-ci. L’un des avantage de Git est sa gestion aisée des branches. Cette fonctionnalité est très utile pour tester sans crainte certaines approches et d’en garder une trace même si en l’état ces modifications ne sont prêtes pour rejoindre le tronc commun.
 \subsubsection{Python}
-Python est un langage de programmation interprété, orienté objet et de haut niveau avec une sémantique dynamique. Ses structures de données intégrées de haut niveau, associées à un typage dynamique et à une liaison dynamique, le rendent très attractif pour le développement rapide d'applications, ainsi que pour une utilisation d'interface graphique on utilisant la bibliothèque Tkinter le meilleur choix pour une application graphique simple rapide et facile à utiliser.\newpage
-\subsection{Les bibliothèques Python utilisé}
+Python est un langage de programmation interprété, orienté objet et de haut niveau avec une sémantique dynamique. Ses structures de données intégrées de haut niveau, associées à un typage dynamique et à une liaison dynamique, le rendent très attractif pour le développement rapide d'applications, ainsi que pour une utilisation d'interface graphique on utilisant la bibliothèque Tkinter, le meilleur choix pour une application graphique simple rapide et facile à utiliser.\newpage
+\subsection{Les bibliothèques Python utilisées}
 \subsubsection{Tkinter}
-Tkinter (" Tk Inter face") est le package multi-plateforme standard de python pour la création d'interfaces utilisateur graphiques (GUI). Il donne accès à un interpréteur Tcl sous-jacent avec la boîte à outils Tk, qui est elle-même une bibliothèque d'interface utilisateur graphique multiplateforme et multilingue.
+Tkinter (" Tk Interface") est le package multi-plateforme standard de python pour la création d'interfaces utilisateur graphiques (GUI). Il donne accès à un interpréteur Tcl sous-jacent avec la boîte à outils Tk, qui est elle-même une bibliothèque d'interface utilisateur graphique multiplateforme et multilingue.
 Tkinter n'est pas la seule bibliothèque graphique pour python, mais c'est celle qui est fournie en standard. Les bibliothèques GUI supplémentaires pouvant être utilisées avec python incluent wxPython , PyQt et kivy .\\
 La plus grande force de Tkinter réside dans son omniprésence et sa simplicité. Il fonctionne directement sur la plupart des plates-formes (Linux, OSX, Windows) et comprend un large éventail de widgets nécessaires pour les tâches les plus courantes (boutons, libellés, dessin, texte
 multiligne, etc.).\\
-On a utilisé la bibliothèque Tkinter pour la conception d'interface graphique de notre application EasyGio  en ajoutant des multiple pages , texte et des boutons pour se naviguer entre ces frames et la réception du commande par le client ou l'utilisateur. 
+On a utilisé la bibliothèque Tkinter pour la conception d'interface graphique de notre application EasyGio  en ajoutant de multiple pages , texte et des boutons pour naviguer entre ces frames et la réception du commande par le client ou l'utilisateur. 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=13cm]{images/Tkinter.png}
@@ -425,7 +449,7 @@ On a utilisé cette bibliothèque pour le traitement et l'affichage des images s
 \end{figure}
 \subsubsection{SymPy}
 SymPy est une bibliothèque Python pour les mathématiques symboliques. Il vise à devenir un système d'algèbre d'ordinateur complets (CAS) tout en maintenant le code aussi simple que possible afin d'être compréhensible et facilement extensible.
-On a utilisé cette bibliothèque pour le calcule des dérivées des fonctions.
+On a utilisé cette bibliothèque pour le calcul des dérivées des fonctions.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=7cm]{images/SymPy.png}
@@ -449,9 +473,9 @@ Cette interface représente la page d'accueil sur laquelle on peut démarrer not
     \caption{Interface de choix de section}
     \label{fig:Interface de choix de section}
 \end{figure}
-Depuis cette interface on peut choisir la partie ou la section voulu.\\
-Si on choisit la partie des fonctions on va être rédiger vers une nouvelle page pour choisir le type du fonction Définit ou In-Définit.\\
-Et si on choisi la partie de Géométrie dans l'espace on va être rédiger vers nouvelle page pour choisir la partie souhaiter Un sphère, un cube ou la partie des vecteurs.
+Depuis cette interface on peut choisir la partie ou la section voulue.\\
+Si on choisit la partie des fonctions on va être dirigé vers une nouvelle page pour choisir le type du fonction Définie ou In-Définie.\\
+Et si on choisi la partie de Géométrie dans l'espace on va être dirigé vers nouvelle page pour choisir la partie souhaité une sphère, un cube ou la partie des vecteurs.
 \section{Interfaces de choix des sous parties}
 \begin{figure}[!h]
     \centering
@@ -580,7 +604,6 @@ Et crée une application qui va très faciliter l'illustration des notions de g�
     URL : \link{http://keepschool.com/fiches-de-cours/lycee/math/vecteurs.html}
     \item Alloschool. AlloSchool est un site de support pédagogique il propose un suivi chronologique par chapitre, comprenant des cours, des exercices corrigés et des examens.\\
     URL : \link{https://www.alloschool.com/}
-    
 \end{enumerate}
 \addcontentsline{toc}{chapter}{Webographie} 
 \end{document}
